@@ -1,0 +1,11 @@
+# Plain MQTT protocol
+listener ${MQTT_TCP_PORT} 
+
+# Plain WebSockets configuration
+listener ${MQTT_WS_PORT} 
+protocol websockets
+
+persistence ${MQTT_PERSISTENCE}
+persistence_location /mosquitto/data/
+log_dest file /mosquitto/log/mosquitto.log
+password_file /mosquitto/config/mosquitto.pass
