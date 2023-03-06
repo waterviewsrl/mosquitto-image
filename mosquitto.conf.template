@@ -9,3 +9,5 @@ persistence ${MQTT_PERSISTENCE}
 persistence_location /mosquitto/data/
 log_dest file /mosquitto/log/mosquitto.log
 password_file /mosquitto/config/mosquitto.pass
+
+log_type subscribe
